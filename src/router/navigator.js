@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
 import { StyleSheet, Image } from 'react-native';
 import { createBottomTabNavigator, TabBarBottom } from "react-navigation";
-import Home from '../../view/home/home';
-import Project from './../../view/project/project';
-import Order from './../../view/order/order';
-import My from './../../view/my/my';
+//主导航页面
+import Home from './../view/home/home';
+import Project from './../view/project/project';
+import Order from './../view/order/order';
+import My from './../view/my/my';
+//主导航设置
 export default createBottomTabNavigator(
     {
         home: {
             screen: Home,
             navigationOptions: () => ({
+                //底部导航的文本
                 tabBarLabel: `首页`,
+                //底部导航的图标
                 tabBarIcon: ({ focused }) => {
-                    var imageIcon = require('./../../images/tabIcon/ic_home.png');
+                    var imageIcon = require('./../images/tabIcon/ic_home.png');
                     if (focused) {
-                        imageIcon = require('./../../images/tabIcon/ic_home_active.png');
+                        imageIcon = require('./../images/tabIcon/ic_home_active.png');
                     }
                     return <Image style={styles.tabIcon} source={imageIcon} />
                 },
@@ -25,9 +29,9 @@ export default createBottomTabNavigator(
             navigationOptions: () => ({
                 tabBarLabel: `项目`,
                 tabBarIcon: ({ focused }) => {
-                    var imageIcon = require('./../../images/tabIcon/ic_project.png');
+                    var imageIcon = require('./../images/tabIcon/ic_project.png');
                     if (focused) {
-                        imageIcon = require('./../../images/tabIcon/ic_project_active.png');
+                        imageIcon = require('./../images/tabIcon/ic_project_active.png');
                     }
                     return <Image style={styles.tabIcon} source={imageIcon} />
                 },
@@ -38,9 +42,9 @@ export default createBottomTabNavigator(
             navigationOptions: () => ({
                 tabBarLabel: `订单`,
                 tabBarIcon: ({ focused }) => {
-                    var imageIcon = require('./../../images/tabIcon/ic_order.png');
+                    var imageIcon = require('./../images/tabIcon/ic_order.png');
                     if (focused) {
-                        imageIcon = require('./../../images/tabIcon/ic_order_active.png');
+                        imageIcon = require('./../images/tabIcon/ic_order_active.png');
                     }
                     return <Image style={styles.tabIcon} source={imageIcon} />
                 },
@@ -51,9 +55,9 @@ export default createBottomTabNavigator(
             navigationOptions: () => ({
                 tabBarLabel: `我的`,
                 tabBarIcon: ({ focused }) => {
-                    var imageIcon = require('./../../images/tabIcon/ic_my.png');
+                    var imageIcon = require('./../images/tabIcon/ic_my.png');
                     if (focused) {
-                        imageIcon = require('./../../images/tabIcon/ic_my_active.png');
+                        imageIcon = require('./../images/tabIcon/ic_my_active.png');
                     }
                     return <Image style={styles.tabIcon} source={imageIcon} />
                 },
