@@ -28,6 +28,7 @@ export const store = createStore(
     applyMiddleware(middleware),
 );
 export const AppWithNavigationState = connect(mapStateToProps)(App);
+//每次启动项目的时候自动把 cacheNameList 里面提供名称的数据填充到redux数据中心
 async function setCacheData() {
     for (var item of cacheNameList) {
         let getData = await AsyncStorage.getItem(item);

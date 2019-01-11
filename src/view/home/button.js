@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView, StyleSheet, Text, View, Button } from 'react-native';
-class Button extends Component {
+class buttonPage extends Component {
     static navigationOptions = {
         title: "子页面",
         //右边的按钮
@@ -24,4 +24,4 @@ class Button extends Component {
         );
     }
 }
-export default Button;
+export default buttonPage;

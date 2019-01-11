@@ -607,7 +607,7 @@
     pirates "^4.0.0"
     source-map-support "^0.5.9"
 
-"@babel/runtime@^7.0.0":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.2.0":
   version "7.2.0"
   resolved "http://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.2.0.tgz#b03e42eeddf5898e00646e4c840fa07ba8dcad7f"
   integrity sha1-sD5C7t31iY4AZG5MhA+ge6jcrX8=
@@ -646,6 +646,28 @@
     esutils "^2.0.2"
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
+
+"@react-navigation/core@3.0.2":
+  version "3.0.2"
+  resolved "http://registry.npm.taobao.org/@react-navigation/core/download/@react-navigation/core-3.0.2.tgz#8631801533a27d034a3b8421dfd0510a9f27dcf3"
+  integrity sha1-hjGAFTOifQNKO4Qh39BRCp8n3PM=
+  dependencies:
+    create-react-context "0.2.2"
+    hoist-non-react-statics "^3.0.1"
+    path-to-regexp "^1.7.0"
+    query-string "^6.2.0"
+    react-is "^16.5.2"
+    react-lifecycles-compat "^3.0.4"
+
+"@react-navigation/native@3.0.3":
+  version "3.0.3"
+  resolved "http://registry.npm.taobao.org/@react-navigation/native/download/@react-navigation/native-3.0.3.tgz#6b1a6e15cde719e6c932bd78b23fa1417f6c0cab"
+  integrity sha1-axpuFc3nGebJMr14sj+hQX9sDKs=
+  dependencies:
+    hoist-non-react-statics "^3.0.1"
+    react-native-gesture-handler "^1.0.0"
+    react-native-safe-area-view "^0.11.0"
+    react-native-screens "^1.0.0 || ^1.0.0-alpha"
 
 abab@^2.0.0:
   version "2.0.0"
@@ -1558,6 +1580,14 @@ create-react-class@^15.6.3:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
+create-react-context@0.2.2:
+  version "0.2.2"
+  resolved "http://registry.npm.taobao.org/create-react-context/download/create-react-context-0.2.2.tgz#9836542f9aaa22868cd7d4a6f82667df38019dca"
+  integrity sha1-mDZUL5qqIoaM19Sm+CZn3zgBnco=
+  dependencies:
+    fbjs "^0.8.0"
+    gud "^1.0.0"
+
 cross-spawn@^5.0.1, cross-spawn@^5.1.0:
   version "5.1.0"
   resolved "http://registry.npm.taobao.org/cross-spawn/download/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
@@ -2038,7 +2068,7 @@ fbjs-scripts@^1.0.0:
     semver "^5.1.0"
     through2 "^2.0.0"
 
-fbjs@^0.8.9:
+fbjs@^0.8.0, fbjs@^0.8.9:
   version "0.8.17"
   resolved "http://registry.npm.taobao.org/fbjs/download/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
   integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
@@ -2317,6 +2347,11 @@ growly@^1.3.0:
   resolved "http://registry.npm.taobao.org/growly/download/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
   integrity sha1-8QdIy+dq+WS3yWyTxrzCivEgwIE=
 
+gud@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/gud/download/gud-1.0.0.tgz#a489581b17e6a70beca9abe3ae57de7a499852c0"
+  integrity sha1-pIlYGxfmpwvsqavjrlfeekmYUsA=
+
 handlebars@^4.0.3:
   version "4.0.12"
   resolved "http://registry.npm.taobao.org/handlebars/download/handlebars-4.0.12.tgz#2c15c8a96d46da5e266700518ba8cb8d919d5bc5"
@@ -2405,6 +2440,18 @@ has@^1.0.1, has@^1.0.3:
   integrity sha1-ci18v8H2qoJB8W3YFOAR4fQeh5Y=
   dependencies:
     function-bind "^1.1.1"
+
+hoist-non-react-statics@^2.3.1, hoist-non-react-statics@^2.5.0:
+  version "2.5.5"
+  resolved "http://registry.npm.taobao.org/hoist-non-react-statics/download/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
+  integrity sha1-xZA89AnA39kI84jmGdhrnBF0y0c=
+
+hoist-non-react-statics@^3.0.1, hoist-non-react-statics@^3.2.1:
+  version "3.2.1"
+  resolved "http://registry.npm.taobao.org/hoist-non-react-statics/download/hoist-non-react-statics-3.2.1.tgz#c09c0555c84b38a7ede6912b61efddafd6e75e1e"
+  integrity sha1-wJwFVchLOKft5pErYe/dr9bnXh4=
+  dependencies:
+    react-is "^16.3.2"
 
 home-or-tmp@^2.0.0:
   version "2.0.0"
@@ -2764,6 +2811,11 @@ is-windows@^1.0.2:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/is-windows/download/is-windows-1.0.2.tgz#d1850eb9791ecd18e6182ce12a30f396634bb19d"
   integrity sha1-0YUOuXkezRjmGCzhKjDzlmNLsZ0=
+
+isarray@0.0.1:
+  version "0.0.1"
+  resolved "http://registry.npm.taobao.org/isarray/download/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
+  integrity sha1-ihis/Kmo9Bd+Cav8YDiTmwXR7t8=
 
 isarray@1.0.0, isarray@~1.0.0:
   version "1.0.0"
@@ -3457,7 +3509,7 @@ lodash@^4.13.1, lodash@^4.17.10, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0, 
   resolved "http://registry.npm.taobao.org/lodash/download/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha1-s56mIp72B+zYniyN8SU2iRysm40=
 
-loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
+loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1, loose-envify@^1.4.0:
   version "1.4.0"
   resolved "http://registry.npm.taobao.org/loose-envify/download/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
   integrity sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=
@@ -4314,6 +4366,13 @@ path-parse@^1.0.5, path-parse@^1.0.6:
   resolved "http://registry.npm.taobao.org/path-parse/download/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
   integrity sha1-1i27VnlAXXLEc37FhgDp3c8G0kw=
 
+path-to-regexp@^1.7.0:
+  version "1.7.0"
+  resolved "http://registry.npm.taobao.org/path-to-regexp/download/path-to-regexp-1.7.0.tgz#59fde0f435badacba103a84e9d3bc64e96b9937d"
+  integrity sha1-Wf3g9DW62suhA6hOnTvGTpa5k30=
+  dependencies:
+    isarray "0.0.1"
+
 path-type@^1.0.0:
   version "1.1.0"
   resolved "http://registry.npm.taobao.org/path-type/download/path-type-1.1.0.tgz#59c44f7ee491da704da415da5a4070ba4f8fe441"
@@ -4463,7 +4522,7 @@ prompts@^0.1.9:
     kleur "^2.0.1"
     sisteransi "^0.1.1"
 
-prop-types@^15.5.8, prop-types@^15.6.2:
+prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2:
   version "15.6.2"
   resolved "http://registry.npm.taobao.org/prop-types/download/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   integrity sha1-BdXKd7RFPphdYPx/+MhZCUpJcQI=
@@ -4495,6 +4554,14 @@ qs@~6.5.2:
   version "6.5.2"
   resolved "http://registry.npm.taobao.org/qs/download/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
   integrity sha1-yzroBuh0BERYTvFUzo7pjUA/PjY=
+
+query-string@^6.2.0:
+  version "6.2.0"
+  resolved "http://registry.npm.taobao.org/query-string/download/query-string-6.2.0.tgz#468edeb542b7e0538f9f9b1aeb26f034f19c86e1"
+  integrity sha1-Ro7etUK34FOPn5sa6ybwNPGchuE=
+  dependencies:
+    decode-uri-component "^0.2.0"
+    strict-uri-encode "^2.0.0"
 
 randomatic@^3.0.0:
   version "3.1.1"
@@ -4538,10 +4605,60 @@ react-devtools-core@^3.4.2:
     shell-quote "^1.6.1"
     ws "^3.3.1"
 
-react-is@^16.6.3:
+react-is@^16.3.2, react-is@^16.5.2, react-is@^16.6.3:
   version "16.7.0"
   resolved "http://registry.npm.taobao.org/react-is/download/react-is-16.7.0.tgz#c1bd21c64f1f1364c6f70695ec02d69392f41bfa"
   integrity sha1-wb0hxk8fE2TG9waV7ALWk5L0G/o=
+
+react-lifecycles-compat@^3.0.4:
+  version "3.0.4"
+  resolved "http://registry.npm.taobao.org/react-lifecycles-compat/download/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
+  integrity sha1-TxonOv38jzSIqMUWv9p4+HI1I2I=
+
+react-native-gesture-handler@^1.0.0, react-native-gesture-handler@^1.0.12:
+  version "1.0.12"
+  resolved "http://registry.npm.taobao.org/react-native-gesture-handler/download/react-native-gesture-handler-1.0.12.tgz#99a22f90212df299245357dbd3a9a01c788f310b"
+  integrity sha1-maIvkCEt8pkkU1fb06mgHHiPMQs=
+  dependencies:
+    hoist-non-react-statics "^2.3.1"
+    invariant "^2.2.2"
+    prop-types "^15.5.10"
+
+react-native-image-picker@^0.28.0:
+  version "0.28.0"
+  resolved "http://registry.npm.taobao.org/react-native-image-picker/download/react-native-image-picker-0.28.0.tgz#e3f26df170ea932e9c0404624fbced2f59a300e3"
+  integrity sha1-4/Jt8XDqky6cBARiT7ztL1mjAOM=
+
+react-native-safe-area-view@^0.11.0:
+  version "0.11.0"
+  resolved "http://registry.npm.taobao.org/react-native-safe-area-view/download/react-native-safe-area-view-0.11.0.tgz#4f3dda43c2bace37965e7c6aef5fc83d4f19d174"
+  integrity sha1-Tz3aQ8K6zjeWXnxq71/IPU8Z0XQ=
+  dependencies:
+    hoist-non-react-statics "^2.3.1"
+
+"react-native-screens@^1.0.0 || ^1.0.0-alpha":
+  version "1.0.0-alpha.21"
+  resolved "http://registry.npm.taobao.org/react-native-screens/download/react-native-screens-1.0.0-alpha.21.tgz#ba8d401e82fa3d0f30e7922dbb6446a8c000d7ef"
+  integrity sha1-uo1AHoL6PQ8w55Itu2RGqMAA1+8=
+
+react-native-splash-screen@^3.1.1:
+  version "3.1.1"
+  resolved "http://registry.npm.taobao.org/react-native-splash-screen/download/react-native-splash-screen-3.1.1.tgz#1a4e46c9fdce53ff52af2a2cb4181788c4e30b30"
+  integrity sha1-Gk5Gyf3OU/9SryostBgXiMTjCzA=
+
+react-native-swiper@^1.5.14:
+  version "1.5.14"
+  resolved "http://registry.npm.taobao.org/react-native-swiper/download/react-native-swiper-1.5.14.tgz#1c6f949ca377186300f972bb0f30d24062c899aa"
+  integrity sha1-HG+UnKN3GGMA+XK7DzDSQGLImao=
+  dependencies:
+    prop-types "^15.5.10"
+
+react-native-tab-view@^1.0.0, react-native-tab-view@^1.2.0:
+  version "1.3.1"
+  resolved "http://registry.npm.taobao.org/react-native-tab-view/download/react-native-tab-view-1.3.1.tgz#f9932d6bd5ba7dad75ef9335a68f13d85ba5bd56"
+  integrity sha1-+ZMta9W6fa1175M1po8T2FulvVY=
+  dependencies:
+    prop-types "^15.6.1"
 
 react-native@0.57.8:
   version "0.57.8"
@@ -4601,6 +4718,46 @@ react-native@0.57.8:
     xmldoc "^0.4.0"
     yargs "^9.0.0"
 
+react-navigation-drawer@1.0.5:
+  version "1.0.5"
+  resolved "http://registry.npm.taobao.org/react-navigation-drawer/download/react-navigation-drawer-1.0.5.tgz#d8cc71bd1779186261f3c3754b11f29aa98bd4f5"
+  integrity sha1-2MxxvRd5GGJh88N1SxHymqmL1PU=
+  dependencies:
+    react-native-tab-view "^1.2.0"
+
+react-navigation-redux-helpers@^2.0.9:
+  version "2.0.9"
+  resolved "http://registry.npm.taobao.org/react-navigation-redux-helpers/download/react-navigation-redux-helpers-2.0.9.tgz#244e7ebbc43481602b1e7948a491b34a312dca06"
+  integrity sha1-JE5+u8Q0gWArHnlIpJGzSjEtygY=
+  dependencies:
+    invariant "^2.2.2"
+
+react-navigation-stack@1.0.6:
+  version "1.0.6"
+  resolved "http://registry.npm.taobao.org/react-navigation-stack/download/react-navigation-stack-1.0.6.tgz#5c2b6617dccc1de6001b387cd967baa6b205132d"
+  integrity sha1-XCtmF9zMHeYAGzh82We6prIFEy0=
+
+react-navigation-tabs@1.0.2:
+  version "1.0.2"
+  resolved "http://registry.npm.taobao.org/react-navigation-tabs/download/react-navigation-tabs-1.0.2.tgz#cc6c61db0c61054388ef6f726a8ffc183d6095b5"
+  integrity sha1-zGxh2wxhBUOI729yao/8GD1glbU=
+  dependencies:
+    hoist-non-react-statics "^2.5.0"
+    prop-types "^15.6.1"
+    react-lifecycles-compat "^3.0.4"
+    react-native-tab-view "^1.0.0"
+
+react-navigation@^3.0.9:
+  version "3.0.9"
+  resolved "http://registry.npm.taobao.org/react-navigation/download/react-navigation-3.0.9.tgz#1c82f8ec2f87e2728816e79fb43d7b11ed265415"
+  integrity sha1-HIL47C+H4nKIFueftD17Ee0mVBU=
+  dependencies:
+    "@react-navigation/core" "3.0.2"
+    "@react-navigation/native" "3.0.3"
+    react-navigation-drawer "1.0.5"
+    react-navigation-stack "1.0.6"
+    react-navigation-tabs "1.0.2"
+
 react-proxy@^1.1.7:
   version "1.1.8"
   resolved "http://registry.npm.taobao.org/react-proxy/download/react-proxy-1.1.8.tgz#9dbfd9d927528c3aa9f444e4558c37830ab8c26a"
@@ -4608,6 +4765,18 @@ react-proxy@^1.1.7:
   dependencies:
     lodash "^4.6.1"
     react-deep-force-update "^1.0.0"
+
+react-redux@^6.0.0:
+  version "6.0.0"
+  resolved "http://registry.npm.taobao.org/react-redux/download/react-redux-6.0.0.tgz#09e86eeed5febb98e9442458ad2970c8f1a173ef"
+  integrity sha1-Cehu7tX+u5jpRCRYrSlwyPGhc+8=
+  dependencies:
+    "@babel/runtime" "^7.2.0"
+    hoist-non-react-statics "^3.2.1"
+    invariant "^2.2.4"
+    loose-envify "^1.4.0"
+    prop-types "^15.6.2"
+    react-is "^16.6.3"
 
 react-test-renderer@16.6.3:
   version "16.6.3"
@@ -4695,6 +4864,14 @@ realpath-native@^1.0.0:
   integrity sha1-zVHOCJtRO0XPmxUWyCmJtRzMZWA=
   dependencies:
     util.promisify "^1.0.0"
+
+redux@^4.0.1:
+  version "4.0.1"
+  resolved "http://registry.npm.taobao.org/redux/download/redux-4.0.1.tgz#436cae6cc40fbe4727689d7c8fae44808f1bfef5"
+  integrity sha1-Q2yubMQPvkcnaJ18j65EgI8b/vU=
+  dependencies:
+    loose-envify "^1.4.0"
+    symbol-observable "^1.2.0"
 
 regenerate-unicode-properties@^7.0.0:
   version "7.0.0"
@@ -5264,6 +5441,11 @@ stream-buffers@~2.2.0:
   resolved "http://registry.npm.taobao.org/stream-buffers/download/stream-buffers-2.2.0.tgz#91d5f5130d1cef96dcfa7f726945188741d09ee4"
   integrity sha1-kdX1Ew0c75bc+n9yaUUYh0HQnuQ=
 
+strict-uri-encode@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/strict-uri-encode/download/strict-uri-encode-2.0.0.tgz#b9c7330c7042862f6b142dc274bbcc5866ce3546"
+  integrity sha1-ucczDHBChi9rFC3CdLvMWGbONUY=
+
 string-length@^2.0.0:
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/string-length/download/string-length-2.0.0.tgz#d40dbb686a3ace960c1cffca562bf2c45f8363ed"
@@ -5350,6 +5532,11 @@ supports-color@^5.3.0:
   integrity sha1-4uaaRKyHcveKHsCzW2id9lMO/I8=
   dependencies:
     has-flag "^3.0.0"
+
+symbol-observable@^1.2.0:
+  version "1.2.0"
+  resolved "http://registry.npm.taobao.org/symbol-observable/download/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
+  integrity sha1-wiaIrtTqs83C3+rLtWFmBWCgCAQ=
 
 symbol-tree@^3.2.2:
   version "3.2.2"

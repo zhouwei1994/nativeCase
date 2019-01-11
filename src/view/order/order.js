@@ -19,7 +19,7 @@ export default class Order extends Component {
     };
     render() {
         return (
-            <ScrollView style={common.pageColor}>
+            <ScrollView style={styles.orderPage}>
                 <Text style={{fontSize:40}}>路由方法</Text>
                 <Text>{instructions}</Text>
                 <Button

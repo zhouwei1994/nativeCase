@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Text, View, StyleSheet, TouchableNativeFeedback, Image } from 'react-native';
 import { withNavigation } from 'react-navigation';
-import Icon from 'react-native-vector-icons/Entypo';
 class List extends Component {
     constructor(props) {
         super(props);
@@ -15,7 +14,7 @@ class List extends Component {
                 background={TouchableNativeFeedback.SelectableBackground()}>
                 <View style={styles.list}>
                     <Text style={{ fontSize: 18 }}>{this.props.title}</Text>
-                    <Icon style={{fontSize:20}} name="chevron-thin-right"></Icon>
+                    <Image style={{width:20,height:20}} source={require("../../images/list_ic_more.png")}/>
                 </View>
             </TouchableNativeFeedback>
         );

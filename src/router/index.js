@@ -5,9 +5,9 @@ import {
     createAppContainer
 } from "react-navigation";
 //底部导航配置
-import Navigator from './../components/navigator/index';
+import Navigator from './navigator';
 //页面
-import Button from '../view/home/Button';
+import button from '../view/home/button';
 //页面路由
 const routerStack = createStackNavigator({
     navigator: {
@@ -18,7 +18,7 @@ const routerStack = createStackNavigator({
         }
     },
     button: {
-        screen: Button,
+        screen: button,
     },
 }, {
         //默认第一次显示首页
@@ -36,7 +36,7 @@ const routerStack = createStackNavigator({
         defaultNavigationOptions: ({ navigation }) => {
             return {
                 // 设置头部返回图片
-                headerBackImage: <Image style={{width:22,height:20}} screen={require("../images/nav_back.png")}/>
+                headerBackImage: <Image style={{width:22,height:20}} screen={require("./../images/nav_back.png")}/>
             }
         },
         //页面跳转动画

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView, StyleSheet, Text, View, Button } from 'react-native';
 import { connect } from 'react-redux';
-import common from './../../style/common';
 class My extends Component {
     constructor(props) {
         super(props)
@@ -11,7 +10,7 @@ class My extends Component {
     }
     render() {
         return (
-            <ScrollView style={common.pageColor}>
+            <ScrollView style={styles.myPage}>
                 <Text style={{fontSize:40}}>全局状态管理方法</Text>
                 <Text>token:{this.props.userInfo.token}</Text>
                 <Button title="修改token" onPress={this.props.setUserInfo}></Button>
@@ -31,12 +30,14 @@ let OTHER_TODO = {
     type: "OTHER_TODO",
     data: ""
 };
+//获取redux里面的数据
 let mapStateToProps = function (state) {
     return {
         userInfo: state.userInfo,
         other: state.other,
     }
 }
+//给对应的数据赋值
 let mapDispatchToProps = function (dispatch) {
     return {
         setUserInfo: () => {
@@ -49,6 +50,7 @@ let mapDispatchToProps = function (dispatch) {
         }
     }
 }
+//redux和页面关联
 export default connect(mapStateToProps, mapDispatchToProps)(My);
 const styles = StyleSheet.create({
     myPage: {

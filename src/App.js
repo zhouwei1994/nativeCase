@@ -4,7 +4,7 @@ import { NavigationActions } from "react-navigation";
 import { Provider } from 'react-redux';
 import SplashScreen from 'react-native-splash-screen';
 import { store, AppWithNavigationState } from './store/index';
-import "./components/common/RootView";
+// import "./components/common/RootView";
 //最后一次按返回的时间
 let lastBackPressed = 0;
 export default class Root extends React.Component {
