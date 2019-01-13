@@ -133,7 +133,7 @@ class Address extends Component {
                                 return <TouchableHighlight key={index} underlayColor="#f1f1f1" onPress={() => {
                                     this.SelectListAddress(item);
                                 }}>
-                                    <Text style={{ ...styles.SelectItem , color: this.state.addressVal.length > this.state.addressIndex && item.name === this.state.addressVal[this.state.addressIndex].name ? "#F00" : "#333" }}>{item.name}</Text>
+                                    <Text style={{ ...styles.SelectItem , color: this.state.addressVal.length > this.state.addressIndex && item.name === this.state.addressVal[this.state.addressIndex].name ? this.props.activeColor : "#333" }}>{item.name}</Text>
                                 </TouchableHighlight>
                             })
                         }
