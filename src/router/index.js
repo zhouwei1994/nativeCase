@@ -36,7 +36,7 @@ const routerStack = createStackNavigator({
         defaultNavigationOptions: ({ navigation }) => {
             return {
                 // 设置头部返回图片
-                headerBackImage: <Image style={{width:22,height:20}} screen={require("./../images/nav_back.png")}/>
+                headerBackImage: <Image style={{width:22,height:20}} resizeMode="contain" source={require("./../images/nav_back.png")}/>
             }
         },
         //页面跳转动画
