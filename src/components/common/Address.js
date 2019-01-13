@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, ScrollView, Text, View, Dimensions, TouchableHighlight } from 'react-native';
-import $http from './../../config/axios';
+import $http from './../../config/fetch';
 const { width, height } = Dimensions.get('window');
 var scrollViewRef;
 class Address extends Component {
@@ -38,7 +38,7 @@ class Address extends Component {
     //获取地址信息
     getRegion(uid) {
         const _this = this;
-        $http.get('kemean/aid/region?pid=' + uid)
+        $http.get('kemean/aid/region',{pid:uid})
             .then(function (response) {
                 if (response.length > 0) {
                     _this.setState({

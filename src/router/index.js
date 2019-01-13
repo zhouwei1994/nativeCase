@@ -7,7 +7,15 @@ import {
 //底部导航配置
 import Navigator from './navigator';
 //页面
+//home文件下的
 import button from '../view/home/button';
+import AddressSelect from '../view/home/AddressSelect';
+// import Datepicker from '../view/home/Datepicker';
+import Popup from '../view/home/Popup';
+import Swiper from '../view/home/Swiper';
+import Toast from '../view/home/Toast';
+//order文件下的
+import childPage from '../view/order/childPage';
 //页面路由
 const routerStack = createStackNavigator({
     navigator: {
@@ -19,6 +27,24 @@ const routerStack = createStackNavigator({
     },
     button: {
         screen: button,
+    },
+    addressSelect: {
+        screen: AddressSelect,
+    },
+    // datepicker: {
+    //     screen: Datepicker,
+    // },
+    popup: {
+        screen: Popup,
+    },
+    swiper: {
+        screen: Swiper,
+    },
+    toast: {
+        screen: Toast,
+    },
+    childPage: {
+        screen: childPage,
     },
 }, {
         //默认第一次显示首页

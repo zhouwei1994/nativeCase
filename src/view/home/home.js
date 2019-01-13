@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView, StyleSheet, Text, View, Button } from 'react-native';
+import List from './../../components/module/list';
 class Home extends Component {
     constructor(props) {
         super(props);
@@ -7,7 +8,15 @@ class Home extends Component {
     render() {
         return (
             <ScrollView>
-                <Text style={{fontSize:30}}>react-native页面</Text>
+                <Text style={{ fontSize: 30 }}>第三方组件</Text>
+                {/* <List title="日期/时间选择器" path="datepicker"></List> */}
+                {/* <List title="上传图片/拍照/图片剪切" path="cropPicker"></List> */}
+                {/* <List title="图片预览" path="picturePreview"></List> */}
+                <List title="轮播图" path="swiper"></List>
+                <Text style={{ fontSize: 30 }}>自定义组件/方法</Text>
+                <List title="提示" path="toast"></List>
+                <List title="弹窗" path="popup"></List>
+                <List title="地址选择器" path="addressSelect"></List>
             </ScrollView>
         );
     }

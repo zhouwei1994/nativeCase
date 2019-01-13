@@ -73,6 +73,7 @@ class AddToast extends Component {
     }
 }
 let _this;
+let key = 0;
 class ToastView extends Component {
     constructor(props) {
         super(props);
@@ -80,11 +81,22 @@ class ToastView extends Component {
         this.state = {
             toastList: []
         }
+        this.deleteToast = this.deleteToast.bind(this);
     }
     static add = (value) => {
         var toastList = _this.state.toastList;
-        if (toastList.indexOf(value) === -1) {
-            toastList.push(value);
+        var toastAddState = true;
+        toastList.forEach((item, index) => {
+            if (item.text === value) {
+                toastAddState = false;
+            }
+        });
+        if (toastAddState) {
+            toastList.push({
+                text: value,
+                value: <AddToast key={key} delete={_this.deleteToast}>{value}</AddToast>
+            });
+            key++;
             _this.setState({ toastList: toastList })
         }
     };
@@ -104,7 +116,7 @@ class ToastView extends Component {
                 alignItems: "center",
             }}>
                 {this.state.toastList.map((item, index) => {
-                    return <AddToast key={index} delete={this.deleteToast.bind(this)}>{item}</AddToast>;
+                    return item.value;
                 })}
             </View>
         )
