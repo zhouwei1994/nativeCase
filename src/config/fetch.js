@@ -139,7 +139,7 @@ class $ajax {
       if (options.headers[key]) {
         requestObj.setRequestHeader(key, options.headers[key]);
       }
-    })
+    });
     requestObj.send(data);
     requestObj.onreadystatechange = () => {
       if (requestObj.readyState == 4) {

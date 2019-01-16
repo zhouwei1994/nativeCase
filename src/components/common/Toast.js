@@ -122,8 +122,4 @@ class ToastView extends Component {
         )
     }
 }
-
-const styles = StyleSheet.create({
-
-});
 export default ToastView;

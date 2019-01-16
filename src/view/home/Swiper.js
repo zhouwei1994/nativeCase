@@ -3,7 +3,7 @@ import { ScrollView, StyleSheet, Text, View, Modal, Button, Dimensions,Image } f
 //引用插件
 import Swiper from 'react-native-swiper';
 const { width, height } = Dimensions.get('window')
-class Home extends Component {
+class SwiperPage extends Component {
     static navigationOptions = {
         title: '轮播图',
     };
@@ -12,7 +12,7 @@ class Home extends Component {
     }
     render() {
         return (
-            <ScrollView>
+            <ScrollView style={styles.pageStyle}>
                 <Text style={{ fontSize: 30 }}>swiper</Text>
                 <Swiper
                     //样式
@@ -45,8 +45,11 @@ class Home extends Component {
         );
     }
 }
-export default Home;
+export default SwiperPage;
 const styles = StyleSheet.create({
+    pageStyle: {
+        backgroundColor: '#f5f5f5',
+    },
     wrpaper: {
         width: width,
         height: width * 40 / 75,

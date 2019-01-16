@@ -9,10 +9,13 @@ import Navigator from './navigator';
 //页面
 //home文件下的
 import button from '../view/home/button';
-import AddressSelect from '../view/home/AddressSelect';
-// import Datepicker from '../view/home/Datepicker';
-import Popup from '../view/home/Popup';
+//第三方组件
+import DatePicker from '../view/home/DatePicker';
+import ImagePicker from '../view/home/ImagePicker';
 import Swiper from '../view/home/Swiper';
+//自定义组件
+import AddressSelect from '../view/home/AddressSelect';
+import Popup from '../view/home/Popup';
 import Toast from '../view/home/Toast';
 //order文件下的
 import childPage from '../view/order/childPage';
@@ -22,27 +25,35 @@ const routerStack = createStackNavigator({
         screen: Navigator,
         //不显示头部
         navigationOptions: {
-            header: null,
+            title: ' ', // 这里不给值
+            header: null, // 不显示导航栏
+            gesturesEnabled: false
         }
     },
     button: {
         screen: button,
     },
-    addressSelect: {
-        screen: AddressSelect,
+    //第三方组件
+    datePicker: {
+        screen: DatePicker,
     },
-    // datepicker: {
-    //     screen: Datepicker,
-    // },
-    popup: {
-        screen: Popup,
+    imagePicker: {
+        screen: ImagePicker,
     },
     swiper: {
         screen: Swiper,
     },
+    //自定义组件
+    addressSelect: {
+        screen: AddressSelect,
+    },
+    popup: {
+        screen: Popup,
+    },
     toast: {
         screen: Toast,
     },
+    //order文件下的
     childPage: {
         screen: childPage,
     },

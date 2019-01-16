@@ -3,7 +3,7 @@ import { ScrollView, StyleSheet, Text, View, ActivityIndicator ,Button} from 're
 import Popup from '../../components/common/Popup';
 import Toast from '../../components/common/Toast';
 import Address from '../../components/common/Address';
-class Home extends Component {
+class AddressSelect extends Component {
     static navigationOptions = {
         title: '地址选择器',
     };
@@ -31,14 +31,16 @@ class Home extends Component {
     }
     render() {
         return (
-            <ScrollView>
+            <ScrollView style={styles.pageStyle}>
                 <Text style={{ fontSize: 30 }}>addressSelect</Text>
                 <Button title="打开弹窗" onPress={this.open.bind(this)} />
             </ScrollView>
         );
     }
 }
-export default Home;
+export default AddressSelect;
 const styles = StyleSheet.create({
-
+    pageStyle: {
+        backgroundColor: '#f5f5f5',
+    },
 });

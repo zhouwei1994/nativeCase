@@ -18,10 +18,15 @@ class buttonPage extends Component {
     }
     render() {
         return (
-            <ScrollView>
+            <ScrollView style={styles.pageStyle}>
                 <Text style={{fontSize:30}}>子页面</Text>
             </ScrollView>
         );
     }
 }
 export default buttonPage;
+const styles = StyleSheet.create({
+    pageStyle: {
+        backgroundColor: '#f5f5f5',
+    },
+});

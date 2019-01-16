@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import DatePicker from 'react-native-datepicker';
-class Home extends Component {
+class DatePickerPage extends Component {
     static navigationOptions = {
         title: '日期/时间选择器',
     };
@@ -13,7 +13,7 @@ class Home extends Component {
     }
     render() {
         return (
-            <ScrollView>
+            <ScrollView style={styles.pageStyle}>
                 <Text style={{ fontSize: 30 }}>DatePicker</Text>
                 <DatePicker
                     style={{ width: 200 }}
@@ -65,7 +65,9 @@ class Home extends Component {
         );
     }
 }
-export default Home;
+export default DatePickerPage;
 const styles = StyleSheet.create({
-
+    pageStyle: {
+        backgroundColor: '#f5f5f5',
+    },
 });

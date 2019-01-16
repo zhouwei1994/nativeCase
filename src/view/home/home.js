@@ -7,10 +7,10 @@ class Home extends Component {
     }
     render() {
         return (
-            <ScrollView>
+            <ScrollView style={styles.pageStyle}>
                 <Text style={{ fontSize: 30 }}>第三方组件</Text>
-                {/* <List title="日期/时间选择器" path="datepicker"></List> */}
-                {/* <List title="上传图片/拍照/图片剪切" path="cropPicker"></List> */}
+                <List title="日期/时间选择器" path="datePicker"></List>
+                <List title="上传图片/拍照/图片剪切" path="imagePicker"></List>
                 {/* <List title="图片预览" path="picturePreview"></List> */}
                 <List title="轮播图" path="swiper"></List>
                 <Text style={{ fontSize: 30 }}>自定义组件/方法</Text>
@@ -23,5 +23,7 @@ class Home extends Component {
 }
 export default Home;
 const styles = StyleSheet.create({
-
+    pageStyle: {
+        backgroundColor: '#f5f5f5',
+    },
 });

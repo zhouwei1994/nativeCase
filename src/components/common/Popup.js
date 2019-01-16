@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Dimensions, Animated, TouchableOpacity, BackHandler } from 'react-native';
+import { Number } from 'core-js';
 const { width, height } = Dimensions.get('window');
 var _this = null;
 class Popup extends Component {
@@ -95,7 +96,7 @@ class Popup extends Component {
         if (this.state.show) {
             const translateY = this.state.animatedValue.interpolate({
                 inputRange: [0, 1],
-                outputRange: [this.state.popupHeight + 50, 0]
+                outputRange: [this.state.isHeader ? this.state.popupHeight + 50 : this.state.popupHeight , 0]
             });
             return (
                 <View style={{
