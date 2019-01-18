@@ -7,7 +7,7 @@ class Address extends Component {
     static defaultProps = {
         value: [],//默认数据
         length: 3,//地址选择的长度，从省开始
-        activeColor:"#F00" //选中的颜色
+        activeColor: "#F00" //选中的颜色
     };
     constructor(props) {
         super(props);
@@ -38,7 +38,7 @@ class Address extends Component {
     //获取地址信息
     getRegion(uid) {
         const _this = this;
-        $http.get('kemean/aid/region',{pid:uid})
+        $http.get('kemean/aid/region', { pid: uid })
             .then(function (response) {
                 if (response.length > 0) {
                     _this.setState({
@@ -93,7 +93,11 @@ class Address extends Component {
             <TouchableHighlight key={index} underlayColor="#f1f1f1" onPress={() => {
                 this.selectType(index);
             }}>
-                <Text style={{ marginLeft: 0, ...styles.AddressItem, color: this.state.addressIndex === index ? this.props.activeColor : "#333" }}>{item.name}</Text>
+                <Text style={{
+                    marginLeft: 0,
+                    ...styles.AddressItem,
+                    color: this.state.addressIndex === index ? this.props.activeColor : "#333"
+                }}>{item.name}</Text>
             </TouchableHighlight>
         ));
         //请选择操作
@@ -103,7 +107,11 @@ class Address extends Component {
                 return (<TouchableHighlight underlayColor="#f1f1f1" onPress={() => {
                     this.selectType(len);
                 }}>
-                    <Text style={{ marginLeft: 0, ...styles.AddressItem, color: this.state.addressIndex === len ? this.props.activeColor : "#333" }}>请选择</Text>
+                    <Text style={{
+                        marginLeft: 0,
+                        ...styles.AddressItem,
+                        color: this.state.addressIndex === len ? this.props.activeColor : "#333"
+                    }}>请选择</Text>
                 </TouchableHighlight>)
             } else {
                 return undefined;
@@ -133,8 +141,12 @@ class Address extends Component {
                                 return <TouchableHighlight key={index} underlayColor="#f1f1f1" onPress={() => {
                                     this.SelectListAddress(item);
                                 }}>
-                                    <Text style={{ ...styles.SelectItem , color: this.state.addressVal.length > this.state.addressIndex && item.name === this.state.addressVal[this.state.addressIndex].name ? this.props.activeColor : "#333" }}>{item.name}</Text>
+                                    <Text style={{
+                                        ...styles.SelectItem,
+                                        color: this.state.addressVal.length > this.state.addressIndex && item.name === this.state.addressVal[this.state.addressIndex].name ? this.props.activeColor : "#333"
+                                    }}>{item.name}</Text>
                                 </TouchableHighlight>
+
                             })
                         }
                     </ScrollView>
