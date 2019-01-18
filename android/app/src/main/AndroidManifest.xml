@@ -1,11 +1,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nativecase">
-
+    <!-- 允许程序访问网络连接，可能产生GPRS流量 -->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序显示系统窗口 -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
     
+    <!-- 相机 -->
     <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 允许程序写入外部存储,如SD卡上写文件 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!-- 震动 -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 联网状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
 
     <application
       android:name=".MainApplication"

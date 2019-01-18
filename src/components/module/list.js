@@ -14,7 +14,7 @@ class List extends Component {
                 background={TouchableNativeFeedback.SelectableBackground()}>
                 <View style={styles.list}>
                     <Text style={{ fontSize: 18 }}>{this.props.title}</Text>
-                    <Image style={{width:20,height:20}} source={require("../../images/list_ic_more.png")}/>
+                    <Image style={{width:20,height:20}} resizeMode="contain" source={require("../../images/list_ic_more.png")}/>
                 </View>
             </TouchableNativeFeedback>
         );
