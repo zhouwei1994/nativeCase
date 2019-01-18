@@ -26,7 +26,8 @@ windows用户请用 react-native run-android 命令启动
 │   │    ├── common             // 常用组件
 │   │    └── module             // 项目组件
 │   ├── config                  // 项目配置文件
-│   │    ├── axios.js           // axios http数据请求配置
+│   │    ├── fetch.js           // response.js方法配置
+│   │    ├── response.js        // http数据请求方法
 │   │    └── utils.js           // 常用方法库
 │   ├── images                  // 项目图片
 │   │    └── tabIcon            // 底部导航图标
