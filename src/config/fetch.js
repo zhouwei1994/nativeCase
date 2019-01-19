@@ -14,11 +14,11 @@ var http = new response({
   // timeout: 0,
   //设置请求头（默认为{}）
   headers: {
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json' 
   }
 });
 let ajaxNum = 0;
-//请求开始回调
+//请求开始回调 
 http.responseStart = function (options) {
   console.log("请求开始");
   //判断当前接口是否需要加载动画
@@ -31,11 +31,11 @@ http.responseStart = function (options) {
 }
 //请求结束
 http.responseEnd = function (options, resolve) {
-  let result = resolve.response;
-  if (typeof result !== 'object') {
-    result = JSON.parse(result);
+  if (typeof resolve.response !== 'object') {
+    resolve.response = JSON.parse(resolve.response);
   }
-  console.log(resolve.responseURL, '\n', result);
+  //打印网络请求情况
+  console.log(resolve.responseURL, '\n', resolve);
   console.log("请求结束");
   //判断当前接口是否需要加载动画
   if (options.load) {
