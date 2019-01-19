@@ -15,6 +15,7 @@ class Home extends Component {
                 <List title="轮播图" path="swiper"></List>
                 <Text style={{ fontSize: 30 }}>自定义组件/方法</Text>
                 <List title="提示" path="toast"></List>
+                <List title="请求加载" path="loading"></List>
                 <List title="弹窗" path="popup"></List>
                 <List title="地址选择器" path="addressSelect"></List>
                 <Text style={{ fontSize: 30 }}>原生组件</Text>

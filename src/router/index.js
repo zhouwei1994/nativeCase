@@ -29,6 +29,7 @@ import Swiper from '../view/home/Swiper';
 import AddressSelect from '../view/home/AddressSelect';
 import Popup from '../view/home/Popup';
 import Toast from '../view/home/Toast';
+import Loading from '../view/home/Loading';
 // API
 import AccessibilityInfo from '../view/project/AccessibilityInfo';
 import Alert from '../view/project/Alert';
@@ -122,6 +123,9 @@ const routerStack = createStackNavigator({
     },
     toast: {
         screen: Toast,
+    },
+    loading: {
+        screen: Loading,
     },
     // API
     accessibilityInfo: {
